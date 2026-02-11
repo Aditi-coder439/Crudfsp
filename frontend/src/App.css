@@ -1,0 +1,93 @@
+/* 1. Global Reset & Green Background */
+:root {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9; /* Light Green Background */
+  color: #333; /* Dark Grey Text */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* 2. Main Container */
+#root {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 20px;
+  text-align: center;
+}
+
+/* 3. Pink "Punk" Headings */
+h1, h2 {
+  color: #ff1493; /* Deep Pink */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 4. Navigation Links */
+nav a {
+  color: #ff1493;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 5. The Table (Full Width) */
+table {
+  width: 100%; 
+  border-collapse: collapse;
+  background-color: white; /* Table is white */
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #333; /* ADDED: Forces text to be visible against white background */
+}
+
+th {
+  background-color: #ff1493; /* Pink Header */
+  color: white; /* Header text remains white */
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #04c695;
+  text-align: center;
+  color: #333; /* ADDED: Forces cell text to be Dark Grey */
+}
+
+/* 6. Buttons */
+button {
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #00b2d1; 
+}
+
+/* 7. Input Forms (For Add Page) */
+input, select {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; 
+  box-sizing: border-box;
+  color: #189f7d; /* ADDED: Ensures text in input forms is visible */
+}

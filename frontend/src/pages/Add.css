@@ -1,0 +1,91 @@
+/* Center everything on the screen */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e8f5e9; /* Light Green Background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* THE BOX (Card) */
+.form-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 20px; /* Slightly rounder for a modern look */
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+  width: 90%; /* Responsive width */
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #2e7d32; /* Darker green for the title */
+  font-size: 28px;
+}
+
+.form-container p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Individual Form Groups */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align labels to the left */
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #eee; /* Thicker, lighter border */
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease; /* Smooth focus transition */
+}
+
+/* Focus state for React inputs */
+input:focus, 
+select:focus {
+  outline: none;
+  border-color: #ff1493; /* Border turns pink when typing */
+}
+
+/* Pink Button */
+button {
+  width: 100%;
+  background-color: #ff1493;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, background-color 0.2s; /* Added click animation */
+}
+
+button:hover {
+  background-color: #d10069;
+  transform: translateY(-2px); /* Lifts slightly on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Sinks back when clicked */
+}
